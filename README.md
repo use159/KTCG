@@ -1,4 +1,4 @@
-# Enhancing recommendation via knowledge transfer contrastive in global-path networks
+# Code for KTCG
 
 ![Paper](https://img.shields.io/badge/Paper-ICIC%202025-blue)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green)](https://www.python.org/)
