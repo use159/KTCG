@@ -1,6 +1,6 @@
 # Code for KTCG
 
-![Paper](https://img.shields.io/badge/Paper-KnowledgeBased%20Systems-blue)
+![Paper](https://img.shields.io/badge/Paper-Knowledge\-Based%20Systems-blue)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green)](https://www.python.org/)
 [![PyTorch 1.10+](https://img.shields.io/badge/PyTorch-1.10%2B-red)](https://pytorch.org/)
 
