@@ -15,8 +15,7 @@ def parse_args():
     parser.add_argument('--test_batch_size', type=int, default=1024, help='batch size')
     parser.add_argument('--dim', type=int, default=64, help='embedding size')
     parser.add_argument('--l2', type=float, default=1e-5, help='l2 regularization weight')
-    parser.add_argument('--kg_l2loss_lambda', type=float, default=1e-5,
-                        help='Lambda when calculating KG l2 loss.')
+    parser.add_argument('--kg_l2loss_lambda', type=float, default=1e-5, help='Lambda when calculating KG l2 loss.')
     parser.add_argument('--lr', type=float, default=1e-4, help='learning rate')
     parser.add_argument("--inverse_r", type=bool, default=True, help="consider inverse relation or not")
     parser.add_argument("--node_dropout", type=bool, default=True, help="consider node dropout or not")
