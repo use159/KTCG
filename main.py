@@ -57,6 +57,15 @@ if __name__ == '__main__':
     n_relations = n_params['n_relations']
     n_nodes = n_params['n_nodes']
 
+    if 0 <= n_relations <= 50:
+        args.n_virtual = 3
+        print(f"Heuristically updated n_virtual to: {args.n_virtual} (because n_relations = {n_relations} is between 0 and 50)")
+    elif 51 <= n_relations <= 100:
+        args.n_virtual = 4
+        print(f"Heuristically updated n_virtual to: {args.n_virtual} (because n_relations = {n_relations} is between 51 and 100)")
+    else:
+        print(f"n_relations ({n_relations}) is outside the specified heuristic ranges [0-100]. Using n_virtual = {args.n_virtual}")
+
     """cf data"""
     train_cf_pairs = torch.LongTensor(np.array([[cf[0], cf[1], cf[2]] for cf in test_cf], np.int32))
     test_cf_pairs = torch.LongTensor(np.array([[cf[0], cf[1], cf[2]] for cf in test_cf], np.int32))
